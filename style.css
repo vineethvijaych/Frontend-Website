@@ -1,12 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Ensure padding and border are included in element width */
-}
-
-html, body {
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  max-width: 100%; /* Ensure the body doesn't exceed viewport width */
 }
 
 header {
@@ -16,7 +10,6 @@ header {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  flex-wrap: wrap; /* Allow header content to wrap on smaller screens */
 }
 
 .icon {
@@ -27,7 +20,7 @@ header {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center align row content */
+  justify-content: space-around;
 }
 
 .col {
@@ -35,7 +28,6 @@ header {
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center align column content */
 }
 h4 {
   cursor: pointer;
@@ -53,7 +45,7 @@ input {
   color: #333;
   margin-top: 10px;
   margin-right: 10px;
-  max-width: 500px; /* Limit input width */
+  width: 500px;
 }
 button {
   padding: 10px 20px;
@@ -72,20 +64,19 @@ button {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  flex-wrap: wrap; /* Allow navbar content to wrap on smaller screens */
 }
 
 .row2 {
   display: flex;
-  flex-wrap: wrap; /* Allow row2 content to wrap */
-  justify-content: center; /* Center align row2 content */
+  flex-wrap: nowrap;
+
   margin-bottom: 20px;
   padding: 5px;
   background-color: #f2f2f2;
 }
 
 .home {
-  margin-left: 0; /* Remove left margin for home link */
+  margin-left: 150px;
 }
 
 .navh:hover {
@@ -98,12 +89,13 @@ button {
 
 .mhead {
   margin-top: 50px;
+
   font-size: 5vh;
   color: #59a45a;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center align mhead content */
+
   padding: 20px;
   position: sticky;
   top: 0;
@@ -118,8 +110,6 @@ button {
   font-size: 3vh;
   color: #333;
   text-align: justify;
-  max-width: 800px; /* Limit paragraph width */
-  margin: 0 auto; /* Center align paragraph */
 }
 
 .mrow {
@@ -127,17 +117,15 @@ button {
 }
 
 video {
-  max-width: 100%; /* Ensure video doesn't overflow */
-  width: 100%; /* Adjust video width to fit container */
-  height: auto; /* Maintain aspect ratio */
+  width: 180%;
+  height: auto;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .vdcol {
-  margin-right: 0; /* Remove extra margin */
+  margin-right: 300px;
   margin-top: 50px;
-  width: 100%; /* Ensure video column fits within the viewport */
 }
 .th {
   text-align: center;
@@ -175,20 +163,16 @@ video {
   padding: 10px;
   font-size: 4vh;
   color: #ffffff;
-  text-align: center; /* Center align product headings */
 }
 
 .tp {
   margin-left: 10px;
-  text-align: center; /* Center align product prices */
 }
 
 .btncart {
   margin-left: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
-  display: block; /* Ensure button is centered */
-  margin: 10px auto; /* Center align button */
 }
 
 .btncart:hover {
@@ -200,9 +184,9 @@ video {
 .mrow2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center align trending products */
-  margin-left: 10px; /* Reduce margins for trending products */
-  margin-right: 10px;
+  justify-content: space-around;
+  margin-left: 150px;
+  margin-right: 150px;
   margin-bottom: 50px;
 }
 
@@ -211,20 +195,15 @@ video {
   font-size: 10vh;
   color: #333;
   margin-bottom: 20px;
-  text-align: center; /* Center align "Why Choose Us" heading */
 }
 
 .col4 {
-  width: 100%; /* Make product columns full width on smaller screens */
-  max-width: 250px; /* Limit maximum width */
-  margin: 10px auto; /* Center align product columns */
-  text-align: center; /* Center align product content */
+  margin-top: 20px;
 }
 .col5 {
   margin: 100px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center align col5 content */
 }
 
 .wp {
@@ -233,7 +212,6 @@ video {
   margin-bottom: 20px;
   padding: 10px;
   font-size: x-large;
-  text-align: center; /* Center align "Why Choose Us" paragraph */
 }
 
 .footer {
@@ -241,35 +219,40 @@ video {
   color: #fff;
   padding: 10px;
   display: flex;
-  justify-content: center; /* Center align footer content */
-  padding: 20px; /* Reduce padding for smaller screens */
+  justify-content: space-between;
+  padding: 50px;
   width: 100%;
-  height: auto; /* Allow footer height to adjust based on content */
+  height: 300px;
   text-align: center;
-  flex-wrap: wrap; /* Allow footer content to wrap */
 }
 
 .col8 {
-  text-align: center; /* Center align col8 content */
-  margin-left: 10px; /* Adjust margins */
-  margin-right: 10px;
-  width: 100%; /* Make footer columns full width */
+  text-align: start;
+  margin-left: 150px;
+  width: 30%;
 }
 
 .col9 {
-  margin-right: 10px; /* Adjust margins */
-  text-align: center; /* Center align col9 content */
-  width: 100%; /* Make footer columns full width */
+  margin-right: 220px;
+  text-align: end;
+  width: 25%;
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center align col9 content */
 }
 
 textarea {
-  width: 90%; /* Reduce textarea width */
-  margin-left: 5%; /* Center align textarea */
-  margin-right: 5%;
+  width: 100%;
+  padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #ffffff;
+  color: #333;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .mfoot {
@@ -294,22 +277,19 @@ textarea {
   }
 
   .mrow2 {
-    margin-left: 10px; /* Adjust margins for trending products */
-    margin-right: 10px;
+    margin-left: 50px; /* Adjust margins for trending products */
+    margin-right: 50px;
   }
 
   .col8,
   .col9 {
     width: 45%; /* Adjust footer columns for medium screens */
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
 @media (max-width: 768px) {
-  .row2{
-    display: none;
-  }
   header {
     flex-direction: column; /* Stack header content vertically */
     align-items: center;
@@ -326,15 +306,15 @@ textarea {
   }
 
   .mrow2 {
-    margin-left: 10px; /* Further reduce margins for trending products */
-    margin-right: 10px;
+    margin-left: 20px; /* Adjust margins for trending products */
+    margin-right: 20px;
   }
 
   .col8,
   .col9 {
     width: 100%; /* Make footer columns full width */
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: center;
   }
 
@@ -349,11 +329,30 @@ textarea {
 }
 
 @media (max-width: 480px) {
+  .mhead {
+    font-size: 3vh; /* Reduce font size for smaller screens */
+  }
+  .search{
+    display: none;
+  }
+  .col9{
+    display: none;
+  }
+  .why{
+    display: none;
+  }
+  .footer{
+     /* Stack footer content vertically */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: auto;
+  }
   .row2{
     display: none;
   }
-  .mhead {
-    font-size: 3vh; /* Reduce font size for smaller screens */
+  video{
+    width: 350px;
   }
 
   .para {
@@ -372,7 +371,9 @@ textarea {
     font-size: large; /* Reduce paragraph font size */
   }
 
-  .col4 {
-    max-width: 100%; /* Allow product columns to take full width */
+  .col8,
+  .col9 {
+    margin-left: 10px; /* Adjust margins for footer sections */
+    margin-right: 10px;
   }
 }
