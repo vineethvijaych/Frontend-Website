@@ -269,21 +269,21 @@ textarea {
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .col {
-    width: 50%; /* Adjust column width for medium screens */
+    width: 50%; 
   }
 
   .vdcol {
-    margin-right: 0; /* Remove extra margin for video column */
+    margin-right: 0; 
   }
 
   .mrow2 {
-    margin-left: 50px; /* Adjust margins for trending products */
+    margin-left: 50px; 
     margin-right: 50px;
   }
 
   .col8,
   .col9 {
-    width: 45%; /* Adjust footer columns for medium screens */
+    width: 45%; 
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -291,46 +291,46 @@ textarea {
 
 @media (max-width: 768px) {
   header {
-    flex-direction: column; /* Stack header content vertically */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
   }
 
   .col {
-    width: 100%; /* Make columns full width on smaller screens */
+    width: 100%; 
     text-align: center;
   }
 
   .home {
-    margin-left: 0; /* Remove left margin for home link */
+    margin-left: 0; 
   }
 
   .mrow2 {
-    margin-left: 20px; /* Adjust margins for trending products */
+    margin-left: 20px; 
     margin-right: 20px;
   }
 
   .col8,
   .col9 {
-    width: 100%; /* Make footer columns full width */
+    width: 100%; 
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
   }
 
   .footer {
-    flex-direction: column; /* Stack footer content vertically */
+    flex-direction: column; 
     align-items: center;
   }
 
   .col9 {
-    margin-top: 20px; /* Add space between footer sections */
+    margin-top: 20px; 
   }
 }
 
 @media (max-width: 480px) {
   .mhead {
-    font-size: 3vh; /* Reduce font size for smaller screens */
+    font-size: 3vh; 
   }
   .search{
     display: none;
@@ -342,7 +342,7 @@ textarea {
     display: none;
   }
   .footer{
-     /* Stack footer content vertically */
+    
     align-items: center;
     text-align: center;
     padding: 20px;
@@ -356,24 +356,24 @@ textarea {
   }
 
   .para {
-    font-size: 2vh; /* Reduce paragraph font size */
+    font-size: 2vh; 
   }
 
   .th {
-    font-size: 4vh; /* Reduce trending heading font size */
+    font-size: 4vh; 
   }
 
   .whyhd {
-    font-size: 6vh; /* Reduce "Why Choose Us" heading font size */
+    font-size: 6vh;
   }
 
   .wp {
-    font-size: large; /* Reduce paragraph font size */
+    font-size: large; 
   }
 
   .col8,
   .col9 {
-    margin-left: 10px; /* Adjust margins for footer sections */
+    margin-left: 10px; 
     margin-right: 10px;
   }
 }
